@@ -13,19 +13,18 @@ main {
   position: absolute;
 }
 section #hero1 {
-  background-color: #e90505;
   width: 70%;
   height: 3470%;
   margin-left: 10%;
   margin-top: 5%;
   padding-top: 0.5%;
-  position: absolute;
+  position: relative;
   margin-bottom: 2%;
 }
 
 .Navbar {
   margin-left: 6%;
-  margin-top: 2%;
+  margin-top: 5%;
   background-color: #ffffff;
   width: 88%;
   height: 88%;
@@ -73,11 +72,13 @@ img {
   cursor: pointer;
 }
 #hero1 {
-  background-color: #f9fbff;
+  background-color: #ffffff;
   width: 70%;
-  margin-left: 10%;
-  margin-top: 5%;
+  margin: auto;
+  margin-top: 10%;
   padding-top: 0.5%;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
 }
 #hero2 {
   background-color: #f9fbff;
@@ -139,7 +140,7 @@ img {
 }
 
 #hero3 {
-  background-color: #f9fbff;
+  /* background-color: #f9fbff; */
   width: 88%;
   margin-left: 6%;
   margin-top: 2%;
@@ -168,6 +169,33 @@ img {
   margin-left: 47%;
   width: 49%;
   text-align: justify;
+}
+
+#projects {
+  width: 88%;
+  height: 650px;
+  margin-top: 2%;
+  margin-left: 6%;
+  border: 1px solid #155eef;
+  border-radius: 8px;
+  display: flex;
+  font-family: "Halant", serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  position: relative;
+  z-index: 2;
+  padding-left: 1%;
+  height: 70%;
+  width: 45%;
+  bottom: -1%;
+}
+.face {
+  position: relative;
+  top: 4%;
+  right: 15%;
+  width: 68%;
 }
 
 footer {
