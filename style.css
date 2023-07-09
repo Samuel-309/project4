@@ -31,6 +31,7 @@
   border-radius: 4px;
   margin: auto auto;
 }
+
 #img-text {
   display: flex;
   margin: 1%;
@@ -68,6 +69,9 @@
   width: 30%;
   padding-top: 20px;
 }
+#navis hr {
+  display: none;
+}
 
 #navis p:hover {
   color: #2e3a53;
@@ -103,7 +107,7 @@
   margin-top: 1%;
   width: 10%;
   font-size: 40px;
-  position: relative;
+  /* position: relative; */
   font-family: "Halant", serif;
   text-align: left;
   margin-bottom: 2%;
@@ -236,6 +240,57 @@ button {
     gap: 9%;
     width: 30%;
     padding-top: 20px;
+  }
+
+  #navis.visible {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 4% 16%;
+    margin: 2% 2%;
+    width: 38%;
+    height: 38%;
+    border-radius: 3px;
+    border: 2px solid #000000;
+
+    position: absolute;
+  }
+  #navis.visible p {
+    color: #000000;
+    font-weight: bold;
+    width: 250%;
+    text-transform: uppercase;
+    position: relative;
+  }
+  #navis.visible p:hover {
+    background-color: rgb(93, 81, 81);
+    border: rgb(93, 81, 81);
+    width: 220%;
+    padding: 10px 10px;
+  }
+  #navis.visible hr {
+    display: block;
+    width: 330%;
+    margin-left: -100%;
+    color: brown;
+    margin-top: -80%;
+  }
+  #navis.visible + .hamburger .one {
+    transform: rotate(45deg);
+    margin-bottom: -5px;
+    background-color: #155eef;
+  }
+  #navis.visible + .hamburger .two {
+    transform: rotate(-45deg);
+  }
+  #navis.visible + .hamburger .three {
+    transform: rotate(45deg);
+    margin-bottom: -5px;
+  }
+
+  #navis.visible + .hamburger .line {
+    background-color: crimson;
   }
   .welcomepage {
     flex-direction: column;
